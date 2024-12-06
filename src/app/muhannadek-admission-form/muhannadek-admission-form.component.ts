@@ -54,20 +54,10 @@ export class MuhannadekAdmissionFormComponent implements OnInit {
   onSubmit(): void {
     if (this.admissionForm.valid) {
       const formData = this.admissionForm.value;
-  
-      // Retrieve existing submissions from localStorage
-      const storedData = localStorage.getItem('submissions');
-      const submissions = storedData ? JSON.parse(storedData) : [];
-  
-      // Add the new form data to the array
-      submissions.push(formData);
-  
-      // Save the updated array back to localStorage
-      localStorage.setItem('submissions', JSON.stringify(submissions));
-  
-      // Redirect to the filled info page
-      this.router.navigateByUrl('/submit');
+      const queryParams = new URLSearchParams(formData).toString();
+      this.router.navigateByUrl(`/submit?${queryParams}`);
     }
   }
+  
   
 }

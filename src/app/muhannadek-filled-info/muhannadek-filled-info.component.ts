@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-muhannadek-filled-info',
@@ -7,16 +7,19 @@ import { Router } from '@angular/router';
   styleUrls: ['./muhannadek-filled-info.component.css']
 })
 export class MuhannadekFilledInfoComponent implements OnInit {
-  formData: any;
+  formData: any = null;
 
-  constructor(private router: Router) {}
+  constructor(private route: ActivatedRoute, private router: Router) {}
 
   ngOnInit(): void {
-    const data = localStorage.getItem('submittedFormData');
-    this.formData = data ? JSON.parse(data) : null;
+    this.route.queryParams.subscribe((params) => {
+      if (Object.keys(params).length > 0) {
+        this.formData = params; 
+      }
+    });
   }
 
   backToForm(): void {
-    this.router.navigateByUrl('/');
+    this.router.navigateByUrl('/'); 
   }
 }
