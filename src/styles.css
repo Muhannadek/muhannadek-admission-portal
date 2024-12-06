@@ -1,1 +1,315 @@
-/* You can add global styles to this file, and also import other style files */
+/* General Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa; /* Default light background */
+    color: #212529; /* Default text color */
+  }
+  
+  h1, h2, h3 {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0056b3;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Header & Footer */
+  header, footer {
+    background-color: #0056b3;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  footer {
+    font-size: 0.9rem;
+  }
+  
+  /* Form Styles */
+  form {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  fieldset {
+    border: none;
+    margin-bottom: 20px;
+  }
+  
+  legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+  }
+  
+  input:focus,
+  select:focus,
+  textarea:focus {
+    border-color: #0056b3;
+    outline: none;
+  }
+  
+  button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #0056b3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin: 5px;
+  }
+  
+  button:hover {
+    background-color: #003d82;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: -10px;
+  }
+  
+  /* Cards for Submitted Form Data */
+  .submitted-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .submitted-form h2 {
+    color: #0056b3;
+    margin-bottom: 20px;
+  }
+  
+  /* Dashboard Table */
+  .dashboard {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dashboard h2 {
+    color: #0056b3;
+    padding: 10px;
+  }
+  
+  .dashboard table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .dashboard th,
+  .dashboard td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .dashboard th {
+    background-color: #f1f1f1;
+    font-weight: bold;
+  }
+  
+  .dashboard tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+  }
+  
+  .dashboard tbody tr:nth-child(even) {
+    background-color: #ffffff;
+  }
+  
+  .dashboard button {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .dashboard button:hover {
+    background-color: #c82333;
+  }
+  
+  /* Dark Mode */
+  .dark-mode {
+    background-color: #121212;
+    color: #e4e4e4;
+  }
+  
+  .dark-mode h1,
+  .dark-mode h2,
+  .dark-mode h3,
+  .dark-mode p,
+  .dark-mode label {
+    color: #e4e4e4;
+  }
+  
+  .dark-mode input,
+  .dark-mode select,
+  .dark-mode textarea {
+    background-color: #2b2b2b;
+    color: #e4e4e4;
+    border: 1px solid #444;
+  }
+  
+  .dark-mode input:focus,
+  .dark-mode select:focus,
+  .dark-mode textarea:focus {
+    border-color: #ffffff;
+  }
+  
+  .dark-mode button {
+    background-color: #0056b3;
+    color: #ffffff;
+  }
+  
+  .dark-mode button:hover {
+    background-color: #003d82;
+  }
+  
+  .dark-mode .submitted-form {
+    background-color: #1e1e1e;
+    color: #e4e4e4;
+  }
+  
+  .dark-mode .dashboard {
+    background-color: #1e1e1e;
+  }
+  
+  .dark-mode .dashboard th {
+    background-color: #2b2b2b;
+  }
+  
+  .dark-mode .dashboard tbody tr:nth-child(odd) {
+    background-color: #292929;
+  }
+  
+  .dark-mode .dashboard tbody tr:nth-child(even) {
+    background-color: #1f1f1f;
+  }
+  
+  .dark-mode footer {
+    background-color: #292929;
+  }
+  
+  /* Centering Buttons */
+  .center-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  button.center-button {
+    margin: 10px auto;
+  }
+  
+  /* Toggle Dark Mode Button */
+  .dark-mode-toggle {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    background-color: #0056b3;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  
+  .dark-mode-toggle:hover {
+    background-color: #003d82;
+  }
+  /* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  /* Dark Mode Styles */
+  .dark-mode {
+    background-color: #121212;
+    color: white;
+  }
+  
+  .dark-mode .header-container {
+    background: linear-gradient(to right, #222, #444);
+  }
+  
+  .dark-mode .footer-container {
+    background-color: #222;
+    border-top: 4px solid #666;
+  }
+  
+  /* Dark Mode Button */
+  .dark-mode-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #444;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .dark-mode-toggle:hover {
+    background-color: #666;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .header-container h1 {
+      font-size: 1.5rem;
+    }
+  
+    .header-container p {
+      font-size: 1rem;
+    }
+  
+    .footer-container {
+      font-size: 0.8rem;
+    }
+  }
+  

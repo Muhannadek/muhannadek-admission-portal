@@ -1,0 +1,18 @@
+.header-container {
+    background: linear-gradient(to right, #007bff, #6c757d);
+    text-align: center;
+    padding: 20px;
+    color: white;
+    border-bottom: 4px solid #333;
+  }
+  
+  .header-container h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .header-container p {
+    font-size: 1.2rem;
+    margin: 10px 0 0;
+  }
+  

@@ -1,0 +1,14 @@
+<div *ngIf="formData; else noData" class="submitted-form">
+  <h2 class="form-header">Submitted Form Data</h2>
+  <p><strong>First Name:</strong> {{ formData.firstName }}</p>
+  <p><strong>Last Name:</strong> {{ formData.lastName }}</p>
+  <p><strong>Date of Birth:</strong> {{ formData.birthDate }}</p>
+  <p><strong>Email:</strong> {{ formData.email }}</p>
+  <p><strong>Phone Number:</strong> {{ formData.contactNumber }}</p>
+  <p><strong>Sheridan Campus:</strong> {{ formData.campus }}</p>
+  <p><strong>Sheridan Department:</strong> {{ formData.department }}</p>
+  <button (click)="backToForm()" class="btn btn-primary">Back to Form</button>
+</div>
+<ng-template #noData>
+  <p>No form data found. Please fill out the form.</p>
+</ng-template>

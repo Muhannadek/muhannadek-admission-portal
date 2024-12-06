@@ -1,0 +1,47 @@
+.landing {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .landing h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .landing p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d;
+    color: white;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #545b62;
+  }
+  

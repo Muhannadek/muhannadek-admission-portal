@@ -1,0 +1,32 @@
+<div class="dashboard">
+    <h2>Submitted Forms</h2>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+          <th>Campus</th>
+          <th>Department</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let form of forms; let i = index">
+          <td>{{ i + 1 }}</td>
+          <td>{{ form.firstName }}</td>
+          <td>{{ form.lastName }}</td>
+          <td>{{ form.email }}</td>
+          <td>{{ form.campus }}</td>
+          <td>{{ form.department }}</td>
+          <td>
+            <button class="btn btn-danger btn-sm" (click)="deleteForm(i)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p *ngIf="forms.length === 0">No submissions found.</p>
+    <button class="btn btn-primary mt-3" (click)="goToMainPage()">Back to Main Page</button>
+  </div>
+  
