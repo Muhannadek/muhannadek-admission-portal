@@ -12,14 +12,17 @@ export class DashboardComponent implements OnInit {
   constructor(private router: Router) {}
 
   ngOnInit(): void {
-    const storedData = localStorage.getItem('submissions');
-    this.forms = storedData ? JSON.parse(storedData) : [];
+    const storedData = localStorage.getItem('submittedFormData');
+    if (storedData) {
+      const parsedData = JSON.parse(storedData);
+      this.forms.push(parsedData); 
+    }
   }
 
   deleteForm(index: number): void {
     if (confirm('Are you sure you want to delete this submission?')) {
       this.forms.splice(index, 1); 
-      localStorage.setItem('submissions', JSON.stringify(this.forms)); 
+      localStorage.removeItem('submittedFormData'); 
     }
   }
 
