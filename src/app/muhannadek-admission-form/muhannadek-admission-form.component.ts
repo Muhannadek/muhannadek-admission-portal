@@ -24,7 +24,6 @@ export class MuhannadekAdmissionFormComponent implements OnInit {
     private router: Router,
     private validationService: ValidationService
   ) {
-    // Initialize the form with validations
     this.admissionForm = this.fb.group({
       firstName: ['', [Validators.required]],
       lastName: ['', [Validators.required]],
@@ -50,14 +49,11 @@ export class MuhannadekAdmissionFormComponent implements OnInit {
     return error ? { emailError: error } : null;
   }
 
-  // On form submission
   onSubmit(): void {
     if (this.admissionForm.valid) {
       const formData = this.admissionForm.value;
-      const queryParams = new URLSearchParams(formData).toString();
-      this.router.navigateByUrl(`/submit?${queryParams}`);
+      localStorage.setItem('submittedFormData', JSON.stringify(formData)); // Save the form data to localStorage
+      this.router.navigateByUrl('/dashboard'); // Redirect to the dashboard
     }
   }
-  
-  
 }
