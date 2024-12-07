@@ -49,11 +49,11 @@ export class MuhannadekAdmissionFormComponent implements OnInit {
     return error ? { emailError: error } : null;
   }
 
-  onSubmit(): void {
-    if (this.admissionForm.valid) {
-      const formData = this.admissionForm.value;
-      localStorage.setItem('submittedFormData', JSON.stringify(formData)); // Save the form data to localStorage
-      this.router.navigateByUrl('/dashboard'); // Redirect to the dashboard
-    }
+onSubmit(): void {
+  if (this.admissionForm.valid) {
+    const formData = this.admissionForm.value;
+    sessionStorage.setItem('submittedFormData', JSON.stringify(formData)); // Use sessionStorage
+    this.router.navigateByUrl('/dashboard'); // Redirect to the dashboard
   }
+}
 }
