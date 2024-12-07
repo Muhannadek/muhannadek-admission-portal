@@ -1,27 +1,58 @@
-# MuhannadekFinalExam
+# 🌟 Muhannadek Admission Portal 🌟
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.10.
+Welcome to the **Muhannadek Admission Portal**, a streamlined application designed to manage and display student admission data efficiently. The portal allows users to fill out forms, toggle between light and dark modes, and view submitted information on a dashboard.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🚀 **Features**
 
-## Code scaffolding
+- 🌙 **Dark Mode Toggle**: Switch between light and dark modes for a better user experience.
+- 📋 **Admission Form**: A fully validated form to collect user data.
+- 📊 **Dashboard**: View submitted forms with an option to delete entries.
+- 🌐 **Responsive Design**: Optimized for both desktop and mobile devices.
+- ⚡ **Hosted on GitHub Pages**: Easily accessible from anywhere.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## 🛠 **Technologies Used**
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Frontend**: Angular 15
+- **Styling**: CSS, Bootstrap
+- **Hosting**: GitHub Pages
+- **Form Validation**: Custom Angular Validators
 
-## Running unit tests
+---
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 🖼 **Screenshots**
 
-## Running end-to-end tests
+### 🌟 **Landing Page**
+![Landing Page](screenshots/landing-page.png)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### 📋 **Admission Form**
+![Admission Form](screenshots/admission-form.png)
 
-## Further help
+### 📊 **Dashboard**
+![Dashboard](screenshots/dashboard.png)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+---
+
+## 🌟 **Contributors**
+- **Muhannad Ekasheh**  
+  🎓 **Program:** Computer Systems Technology - Web Development & Network Engineering  
+  📧 **Email:** [ekashehmuhannad@gmail.com](mailto:ekashehmuhannad@gmail.com)
+
+---
+
+## ⚖️ **License**
+This project is licensed under the **MIT License**. Feel free to use, share, and modify it.
+
+---
+
+## 📬 **Contact**
+If you have any questions or suggestions, feel free to reach out:  
+📧 **Email:** [ekashehmuhannad@gmail.com](mailto:ekashehmuhannad@gmail.com)
+
+---
+
+© **2024 Muhannad Ekasheh** - All Rights Reserved
