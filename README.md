@@ -23,13 +23,6 @@ Welcome to the **Muhannadek Admission Portal**, a streamlined application design
 
 ---
 
-## 🌟 **Contributors**
-- **Muhannad Ekasheh**  
-  🎓 **Program:** Computer Systems Technology - Web Development & Network Engineering  
-  📧 **Email:** [ekashehmuhannad@gmail.com](mailto:ekashehmuhannad@gmail.com)
-
----
-
 ## ⚖️ **License**
 This project is licensed under the **MIT License**. Feel free to use, share, and modify it.
 
