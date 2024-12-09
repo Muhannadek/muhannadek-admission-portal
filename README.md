@@ -23,20 +23,6 @@ Welcome to the **Muhannadek Admission Portal**, a streamlined application design
 
 ---
 
-## 🖼 **Screenshots**
-
-### 🌟 **Landing Page**
-![Landing Page](screenshots/landing-page.png)
-
-### 📋 **Admission Form**
-![Admission Form](screenshots/admission-form.png)
-
-### 📊 **Dashboard**
-![Dashboard](screenshots/dashboard.png)
-
-
----
-
 ## 🌟 **Contributors**
 - **Muhannad Ekasheh**  
   🎓 **Program:** Computer Systems Technology - Web Development & Network Engineering  
